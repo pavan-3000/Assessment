@@ -7,10 +7,12 @@ This project predicts the Home Price Index (HPI) based on various economic facto
 To install the required packages, use the following command:
 ```bash
 pip install -r requirements.txt
+'''
 
+##  RUN
 
-## RUN
+To run the program: 
 
-To run the program:
 '''bash
 python app.py
+'''
