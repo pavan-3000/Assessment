@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HPI Prediction Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>HPI Prediction Form</h1>
+    <form action="/predict" method="post">
+        <div class="form-group">
+            <label for="unemployment">Unemployment Rate (%):</label>
+            <input type="text" id="unemployment" name="unemployment" required>
+        </div>
+        <div class="form-group">
+            <label for="mortgage">Mortgage Rate:</label>
+            <input type="text" id="mortgage" name="mortgage" required>
+        </div>
+        <div class="form-group">
+            <label for="gdp">GDP:</label>
+            <input type="text" id="gdp" name="gdp" required>
+        </div>
+        <div class="form-group">
+            <label for="foreclosures">Foreclosures:</label>
+            <input type="text" id="foreclosures" name="foreclosures" required>
+        </div>
+        <input type="submit" value="Predict HPI">
+    </form>
+</div>
+
+</body>
+</html>
